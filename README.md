@@ -27,8 +27,8 @@ with AES-128, validates it with CRC16, and exchanges it with a cloud backend ove
 and HTTP, with a cooperative RTOS scheduling the tasks and timers. Unit tested with
 Unity. I was **tech lead of a seven-person team** on this project and wrote the
 firmware myself. It was also a greenhouse system — I ended up solving the same problem
-again three years later for my bachelor with a completely different architecture, which
-taught me more than either project did alone.
+again eighteen months later for my bachelor with a completely different architecture,
+which taught me more than either project did alone.
 
 **[HWP1](https://github.com/HCDani/HWP1)** — hardware-oriented programming in C:
 drivers for sensors, a display and a servo, written against the datasheets.
