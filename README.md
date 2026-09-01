@@ -25,7 +25,7 @@ where I was tech lead.
 Arduino Mega 2560. It reads temperature, humidity and light, encrypts the telemetry
 with AES-128, validates it with CRC16, and exchanges it with a cloud backend over WiFi
 and HTTP, with a cooperative RTOS scheduling the tasks and timers. Unit tested with
-Unity. I was **tech lead of a seven-person team** on this project and wrote the
+Unity. I was **tech lead and product owner of a seven-person team** on this project and wrote the
 firmware myself. It was also a greenhouse system — I ended up solving the same problem
 again eighteen months later for my bachelor with a completely different architecture,
 which taught me more than either project did alone.
