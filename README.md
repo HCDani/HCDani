@@ -1,6 +1,6 @@
 # Hock Dániel
 
-Software engineer, BSc in Software Engineering from VIA University College. Based in
+Software engineer, BEng in Software Technology from VIA University College. Based in
 Horsens, Denmark.
 
 I work closest to the machine: embedded firmware, backends, data pipelines, and the
