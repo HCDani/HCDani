@@ -47,9 +47,16 @@ event-handling system for organising events on campus, built with domain-driven 
 on an onion architecture, using the builder, REPR and unit-of-work patterns, with a
 unit test suite behind it.
 
+**[ChatRMI](https://github.com/HCDani/ChatRMI)** — a JavaFX chat application where the
+client reaches the server through a single interface with two implementations: Java RMI
+and raw TCP sockets. The server runs both at once and pushes new messages to every
+client over UDP multicast, so it never needs to know which transport a given client
+arrived on.
+
 **[Assignment4-Kingdom](https://github.com/HCDani/Assignment4-Kingdom)** — a
-multithreaded Java simulation using RMI and socket communication, following the
-listener and publish/subscribe patterns.
+multithreaded Java simulation of a treasury: producer–consumer between the miner and
+the transporters over a monitor, and readers–writers on the treasure room with a
+`ReentrantReadWriteLock`.
 
 ## Tools I've worked with
 
