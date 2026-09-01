@@ -35,7 +35,7 @@ drivers for sensors, a display and a servo, written against the datasheets.
 
 **[DeliriumApp](https://github.com/HCDani/DeliriumApp)** — an internship at VIA
 University College building an offline-capable reference app for nurses caring for
-delirium patients, with a real client. I was product owner. I built the WordPress
+delirium patients, with a real client. I was tech lead. I built the WordPress
 content platform and the JavaScript behind the CAM and B-CAM screening tools, and
 set up the initial React
 Native structure before handing the mobile work to a teammate. The prototype was
