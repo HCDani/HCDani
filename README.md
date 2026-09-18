@@ -30,8 +30,8 @@ firmware myself. It was also a greenhouse system — I ended up solving the same
 again eighteen months later for my bachelor with a completely different architecture,
 which taught me more than either project did alone.
 
-**[HWP1](https://github.com/HCDani/HWP1)** — hardware-oriented programming in C:
-drivers for sensors, a display and a servo, written against the datasheets.
+**[avr-thermostat-cpp](https://github.com/HCDani/avr-thermostat-cpp)** reimplementation and extension of **[HWP1](https://github.com/HCDani/HWP1)** for the ATmega328P, written directly against the hardware registers.
+It adds interface-based drivers and host-side mocks, a real relay output, persistent EEPROM setpoints and fail-safe sensor fault handling.
 
 **[DeliriumApp](https://github.com/HCDani/DeliriumApp)** — an internship at VIA
 University College building an offline-capable reference app for nurses caring for
