@@ -60,10 +60,10 @@ the transporters over a monitor, and readers–writers on the treasure room with
 
 ## Tools I've worked with
 
-**Languages** — C (embedded), C#/.NET, Java, Python, JavaScript, TypeScript
+**Languages** — C (embedded), C++, C#/.NET, Java, Python, JavaScript, TypeScript
 
-**Embedded** — PlatformIO, RTOS scheduling, interrupt-driven I/O, UART, WiFi modules,
-CRC and AES validation, on-board testing
+**Embedded** — PlatformIO, RTOS scheduling, interrupt-driven I/O, ADC, hardware PWM, UART, WiFi modules, EEPROM, 
+CRC and AES validation, fixed-point arithmetic, host-and-target testing
 
 **Infrastructure** — Docker and Docker Compose, nginx, GitHub Actions, Azure, Keycloak
 
