@@ -21,6 +21,14 @@ Compose on a private server. Two CI workflows gate it, one of which builds the w
 stack and runs integration tests against the live pipeline. Built with one teammate,
 where I was tech lead.
 
+**[ghanode_si917](https://github.com/HCDani/ghanode_si917)** — Wi-Fi sensor-node
+firmware in C for the Silicon Labs SiWx917, on FreeRTOS (CMSIS-RTOS2 API), written after
+the bachelor to feed GHA's pipeline. A sensor thread samples on a fixed period and queues
+the readings; a network thread publishes them over MQTT and reconnects when Wi-Fi or the
+broker drops, so readings taken during an outage are sent afterwards. It recovers from
+both kinds of outage unattended, tested on the board by switching the broker and the
+access points off, and the README walks through the bugs those tests turned up.
+
 **[SEP4IOT](https://github.com/HCDani/SEP4IOT)** — telemetry firmware in C on an
 Arduino Mega 2560. It reads temperature, humidity and light, encrypts the telemetry
 with AES-128, validates it with CRC16, and exchanges it with a cloud backend over WiFi
@@ -30,8 +38,13 @@ firmware myself. It was also a greenhouse system — I ended up solving the same
 again eighteen months later for my bachelor with a completely different architecture,
 which taught me more than either project did alone.
 
-**[avr-thermostat-cpp](https://github.com/HCDani/avr-thermostat-cpp)** reimplementation and extension of **[HWP1](https://github.com/HCDani/HWP1)** for the ATmega328P, written directly against the hardware registers.
-It adds interface-based drivers and host-side mocks, a real relay output, persistent EEPROM setpoints and fail-safe sensor fault handling.
+**[avr-thermostat-cpp](https://github.com/HCDani/avr-thermostat-cpp)** — a bare-metal
+thermostat in C++ for the ATmega328P, written directly against the registers with no
+Arduino framework and no heap. Every driver sits behind an interface with a hardware
+implementation and a mock, so the same control logic runs on the target and in 87 host
+tests. It drives a pump through a relay, keeps its setpoints in EEPROM, and fails safe
+when the sensor lead breaks. It rebuilds a C assignment from my hardware-oriented
+programming course ([HWP1](https://github.com/HCDani/HWP1)) with interfaces, mocks and CI.
 
 **[DeliriumApp](https://github.com/HCDani/DeliriumApp)** — an internship at VIA
 University College building an offline-capable reference app for nurses caring for
@@ -62,8 +75,9 @@ the transporters over a monitor, and readers–writers on the treasure room with
 
 **Languages** — C (embedded), C++, C#/.NET, Java, Python, JavaScript, TypeScript
 
-**Embedded** — PlatformIO, RTOS scheduling, interrupt-driven I/O, ADC, hardware PWM, UART, WiFi modules, EEPROM, 
-CRC and AES validation, fixed-point arithmetic, host-and-target testing
+**Embedded** — FreeRTOS (CMSIS-RTOS2 API), RTOS scheduling, PlatformIO, interrupt-driven
+I/O, ADC, hardware PWM, UART, I2C, Wi-Fi modules, EEPROM, CRC and AES validation,
+fixed-point arithmetic, host-and-target testing
 
 **Infrastructure** — Docker and Docker Compose, nginx, GitHub Actions, Azure, Keycloak
 
