@@ -51,9 +51,8 @@ University College building an offline-capable reference app for nurses caring f
 delirium patients, with a real client. I was tech lead. I built the WordPress
 content platform and the JavaScript behind the CAM and B-CAM screening tools, and
 set up the initial React
-Native structure before handing the mobile work to a teammate. The prototype was
-presented at the International Council of Nurses 2025 conference, where I supported the
-practitioner leading the session.
+Native structure before handing the mobile work to a teammate. The client presented the
+prototype at the International Council of Nurses 2025 conference.
 
 **[ViaEventAssociation](https://github.com/HCDani/ViaEventAssociation)** — a solo C#
 event-handling system for organising events on campus, built with domain-driven design
