@@ -21,13 +21,13 @@ Compose on a private server. Two CI workflows gate it, one of which builds the w
 stack and runs integration tests against the live pipeline. Built with one teammate,
 where I was tech lead.
 
-**[ghanode_si917](https://github.com/HCDani/ghanode_si917)** — Wi-Fi sensor-node
-firmware in C for the Silicon Labs SiWx917, on FreeRTOS (CMSIS-RTOS2 API), written after
-the bachelor to feed GHA's pipeline. A sensor thread samples on a fixed period and queues
-the readings; a network thread publishes them over MQTT and reconnects when Wi-Fi or the
-broker drops, so readings taken during an outage are sent afterwards. It recovers from
-both kinds of outage unattended, tested on the board by switching the broker and the
-access points off, and the README walks through the bugs those tests turned up.
+**[ghanode_ze_si917](https://github.com/HCDani/ghanode_ze_si917)** — Wi-Fi sensor-node
+firmware in C for the Silicon Labs SiWx917, on Zephyr, written to feed GHA's pipeline. A
+sensor thread samples every 20 s; a network thread publishes JSON over MQTT at QoS 1.
+The payload has no timestamp, so only the latest unpublished reading is kept. The
+FreeRTOS version, [ghanode_si917](https://github.com/HCDani/ghanode_si917), queued
+readings taken during an outage and sent them afterwards. Its README walks through the
+reconnect bugs found by switching the broker and the access point off on the board.
 
 **[SEP4IOT](https://github.com/HCDani/SEP4IOT)** — telemetry firmware in C on an
 Arduino Mega 2560. It reads temperature, humidity and light, encrypts the telemetry
