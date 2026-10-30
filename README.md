@@ -75,7 +75,7 @@ the transporters over a monitor, and readers–writers on the treasure room with
 
 **Languages** — C (embedded), C++, C#/.NET, Java, Python, JavaScript, TypeScript
 
-**Embedded** — FreeRTOS (CMSIS-RTOS2 API), RTOS scheduling, PlatformIO, interrupt-driven
+**Embedded** — Zephyr, FreeRTOS (CMSIS-RTOS2 API), RTOS scheduling, PlatformIO, interrupt-driven
 I/O, ADC, hardware PWM, UART, I2C, Wi-Fi modules, EEPROM, CRC and AES validation,
 fixed-point arithmetic, host-and-target testing
 
