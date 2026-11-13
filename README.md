@@ -1,7 +1,21 @@
 # Hock Dániel
 
-Software engineer, BEng in Software Technology from VIA University College. Based in
-Horsens, Denmark.
+Software engineer, BEng in Software Technology from VIA University College.
+I have accommodations both in Horsens, Denmark and Budapest, Hungary.
+
+I work closest to the machine: embedded firmware, backends, data pipelines, and the
+infrastructure that holds them together. I've built the web and mobile front ends for
+most of my projects too, and app development is something I'd happily do more of.
+
+**I'm looking for a graduate software engineering role** in Denmark or in Budapest,
+ideally in embedded/IoT, backend or platform work.
+
+I work closest to the machine: embedded firmware, backends, data pipelines, and the
+infrastructure that holds them together. I've built the web and mobile front ends for
+most of my projects too, and app development is something I'd happily do more of.
+
+**I'm looking for a graduate software engineering role** in Denmark or in Budapest,
+ideally in embedded/IoT, backend or platform work.
 
 I work closest to the machine: embedded firmware, backends, data pipelines, and the
 infrastructure that holds them together. I've built the web and mobile front ends for
@@ -12,6 +26,16 @@ Scandinavia, ideally in embedded/IoT, backend or platform work.
 
 ## What I've built
 
+**[ghanode_ze_si917](https://github.com/HCDani/ghanode_ze_si917)** — Wi-Fi sensor-node
+firmware in C for the Silicon Labs SiWx917, on Zephyr, and the thing I'd point at first.
+A sensor thread samples every 20 s; a network thread publishes JSON over MQTT with TLS at
+QoS 1. Every reading carries its UTC time from SNTP, so readings queue through outages
+of up to ten minutes and still arrive with the right time. A recovery ladder restarts
+Wi-Fi and, as a last resort, resets the MCU; I tested it on the board by hanging the
+broker and switching the access point off. 33 unit tests on `native_sim` run in CI. The
+earlier FreeRTOS version, [ghanode_si917](https://github.com/HCDani/ghanode_si917), has a
+README that walks through the reconnect bugs found the same way.
+
 **[GHA](https://github.com/HCDani/GHA)** — my bachelor project, and the thing I'd point
 at first. Sensor nodes publish readings over MQTT; Logstash validates and normalises
 them into OpenSearch, routing anything malformed to a separate error index instead of
@@ -20,14 +44,6 @@ panels, behind Keycloak SSO and an nginx reverse proxy. Ten containers under Doc
 Compose on a private server. Two CI workflows gate it, one of which builds the whole
 stack and runs integration tests against the live pipeline. Built with one teammate,
 where I was tech lead.
-
-**[ghanode_ze_si917](https://github.com/HCDani/ghanode_ze_si917)** — Wi-Fi sensor-node
-firmware in C for the Silicon Labs SiWx917, on Zephyr, written to feed GHA's pipeline. A
-sensor thread samples every 20 s; a network thread publishes JSON over MQTT at QoS 1.
-The payload has no timestamp, so only the latest unpublished reading is kept. The
-FreeRTOS version, [ghanode_si917](https://github.com/HCDani/ghanode_si917), queued
-readings taken during an outage and sent them afterwards. Its README walks through the
-reconnect bugs found by switching the broker and the access point off on the board.
 
 **[SEP4IOT](https://github.com/HCDani/SEP4IOT)** — telemetry firmware in C on an
 Arduino Mega 2560. It reads temperature, humidity and light, encrypts the telemetry
@@ -83,9 +99,11 @@ fixed-point arithmetic, host-and-target testing
 **Data** — MQTT (Mosquitto), Logstash, OpenSearch, Grafana, PostgreSQL, SQLite,
 PocketBase
 
-**Testing** — unit, integration and on-board; Jest, pytest, JUnit
+**Testing** — unit, integration and on-board; Zephyr ztest and Twister, Unity, Jest,
+pytest, JUnit
 
 **Ways of working** — Scrum, Kanban, UP, TDD, DDD
+
 
 ## How I work with AI
 
