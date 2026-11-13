@@ -1,7 +1,7 @@
 # Hock Dániel
 
 Software engineer, BEng in Software Technology from VIA University College.
-I have accommodations both in Horsens, Denmark and Budapest, Hungary.
+I live both in Horsens, Denmark and Budapest, Hungary.
 
 I work closest to the machine: embedded firmware, backends, data pipelines, and the
 infrastructure that holds them together. I've built the web and mobile front ends for
