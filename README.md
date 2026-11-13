@@ -7,23 +7,6 @@ I work closest to the machine: embedded firmware, backends, data pipelines, and 
 infrastructure that holds them together. I've built the web and mobile front ends for
 most of my projects too, and app development is something I'd happily do more of.
 
-**I'm looking for a graduate software engineering role** in Denmark or in Budapest,
-ideally in embedded/IoT, backend or platform work.
-
-I work closest to the machine: embedded firmware, backends, data pipelines, and the
-infrastructure that holds them together. I've built the web and mobile front ends for
-most of my projects too, and app development is something I'd happily do more of.
-
-**I'm looking for a graduate software engineering role** in Denmark or in Budapest,
-ideally in embedded/IoT, backend or platform work.
-
-I work closest to the machine: embedded firmware, backends, data pipelines, and the
-infrastructure that holds them together. I've built the web and mobile front ends for
-most of my projects too, and app development is something I'd happily do more of.
-
-**I'm looking for a graduate software engineering role** in Denmark or elsewhere in
-Scandinavia, ideally in embedded/IoT, backend or platform work.
-
 ## What I've built
 
 **[ghanode_ze_si917](https://github.com/HCDani/ghanode_ze_si917)** — Wi-Fi sensor-node
@@ -36,14 +19,14 @@ broker and switching the access point off. 33 unit tests on `native_sim` run in 
 earlier FreeRTOS version, [ghanode_si917](https://github.com/HCDani/ghanode_si917), has a
 README that walks through the reconnect bugs found the same way.
 
-**[GHA](https://github.com/HCDani/GHA)** — my bachelor project, and the thing I'd point
-at first. Sensor nodes publish readings over MQTT; Logstash validates and normalises
-them into OpenSearch, routing anything malformed to a separate error index instead of
-dropping it; a React frontend shows each user their greenhouses with embedded Grafana
-panels, behind Keycloak SSO and an nginx reverse proxy. Ten containers under Docker
-Compose on a private server. Two CI workflows gate it, one of which builds the whole
-stack and runs integration tests against the live pipeline. Built with one teammate,
-where I was tech lead.
+**[GHA](https://github.com/HCDani/GHA)** — my bachelor project. Sensor nodes published
+readings over MQTT; Logstash validated and normalised them into OpenSearch, routing
+anything malformed to a separate error index instead of dropping it; a React frontend
+showed each user their greenhouses with embedded Grafana panels, behind Keycloak SSO and
+an nginx reverse proxy. Ten containers under Docker Compose on a private server, since
+shut down. Two CI workflows gated it, one of which built the whole stack and ran
+integration tests against the live pipeline. Built with one teammate, where I was tech
+lead.
 
 **[SEP4IOT](https://github.com/HCDani/SEP4IOT)** — telemetry firmware in C on an
 Arduino Mega 2560. It reads temperature, humidity and light, encrypts the telemetry
